@@ -6,7 +6,7 @@ def frequencies(items):
     frequencies={}
     counts = dict()
     for i in items:
-        counts[i] = counts.get(i, 0) + 1
+        counts[i] = str(counts.get(i, 0) + 1)
 
     return counts
     # from collections import Counter
