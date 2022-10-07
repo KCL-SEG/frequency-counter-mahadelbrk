@@ -4,8 +4,14 @@
 def frequencies(items):
 
     frequencies={}
-    from collections import Counter
+    counts = dict()
+    for i in items:
+        counts[i] = counts.get(i, 0) + 1
 
-    c = Counter(items) 
+    return counts
+    # from collections import Counter
 
-    return (Counter(items))
+    # c = Counter(items) 
+
+    # newItem= (Counter(items))
+    # return 
